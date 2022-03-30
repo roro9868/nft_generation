@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Great Eyes";
-const description = "Fairly good eyes collection";
-const baseUri = "ipfs://QmZL2GwEQLGYMfHQMJXAMC3EsTNUG4n9YXLne4QkwMxpBR";
+const namePrefix = "Rominals";
+const description = "Random Collection of NFTs";
+const baseUri = "ipfs://QmZRjaXJCaMHuPUg1KgYDpBvBL5Zka8iby7gcGS7xdt6du";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -15,7 +15,7 @@ const solanaMetadata = {
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "QmZRjaXJCaMHuPUg1KgYDpBvBL5Zka8iby7gcGS7xdt6du",
       share: 100,
     },
   ],
@@ -27,12 +27,10 @@ const layerConfigurations = [
     growEditionSizeTo: 200,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Animal" },
+      { name: "Hat" },
+      { name: "Food" },
+      { name: "Gate" },
     ],
   },
 ];
@@ -42,8 +40,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 500,
+  height: 500,
   smoothing: false,
 };
 
